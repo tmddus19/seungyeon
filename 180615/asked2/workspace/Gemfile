@@ -1,0 +1,11 @@
+source 'https://rubygems.org' #항상 똑같은 줄 모든 gem 관리
+
+#sinatra관련 gem들
+gem 'sinatra'
+gem 'sinatra-contrib'
+
+#data mapper관련 gem들
+gem 'json', '~> 1.6'
+gem 'data_mapper'
+gem 'bcrypt'
+gem 'dm-sqlite-adapter'

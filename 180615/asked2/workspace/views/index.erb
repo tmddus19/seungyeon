@@ -1,0 +1,12 @@
+<h1>ASKED</h1>
+<p>백승연에게 질문하세요.</p>
+<form action="/ask">
+    이름 : <input type="text" name="name"><br>
+    내용 : <input type="text" name="question"><br>
+    <input type="submit">
+</form>
+
+<% @questions.reverse.each do |q| %>
+    이름 : <%= q.name %><br>
+    질문 : <%= q.question %><br>
+<% end %>
