@@ -1,0 +1,11 @@
+<h1>트위터</h1>
+<form action="/create">
+    <input type="hidden" name="name" value="<%= session[:email]%>">
+    트윗 : <input type="text" name="content"><br>
+    <input type="submit">
+</form>
+
+<% @tweets.each do |t|%>
+    이름 : <%= t.name%><br>
+    트윗 : <%= t.content%><br>
+<% end %>
